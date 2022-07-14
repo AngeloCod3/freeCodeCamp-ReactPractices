@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/testimonies.css"
 function Testimonios() {
   return (
     <div className="main-container">
