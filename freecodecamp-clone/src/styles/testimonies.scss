@@ -1,5 +1,30 @@
 $primary-color: white;
 
+@media (max-width: 992px) {
+
+.main-container {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 350px;
+    max-width: 85vw;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 13px 1px rgba($color: #000000, $alpha: 0.1);
+    
+
+    .testimonies-text{
+        
+        display: flex;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+  }
+}
 
 .main-container {
     background-color: $primary-color;
@@ -11,7 +36,7 @@ $primary-color: white;
     
 
     .testimonies-text{
-        margin: 0 30px;
+        margin: 30px;
         display: flex;
         text-align: justify;
         justify-content: center;

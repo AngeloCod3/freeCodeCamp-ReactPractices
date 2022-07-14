@@ -13,7 +13,7 @@ html body {
 }
 html body h1 {
   max-width: 940px;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.1;
   margin: 40px 0px;
@@ -29,11 +29,17 @@ html body h1 {
   text-align: center;
 }
 .App .container {
-  display: flex;
-  justify-content: center;
+  max-width: 60vw;
   min-height: 600px;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
