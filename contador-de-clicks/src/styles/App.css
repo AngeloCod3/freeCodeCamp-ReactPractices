@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(39, 39, 39);
+}
+
+.free-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 50px;
+  margin: 0 auto;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contador-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
