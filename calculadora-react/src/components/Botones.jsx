@@ -1,12 +1,13 @@
+import '../stylesheets/Botones.css';
 
 function Botones(props) {
   const IsOperator = value => {
-    return 
+    return isNaN(value) && (value != '.') && (value != '=');
   }
 
   return (
 
-    <div className={`boton-container ${IsOperator(props.children) ? 'operator' : null}`}>
+    <div className={`boton-container ${IsOperator(props.children) ? 'operator' : ''}`.trimEnd()} onClick={() => props.clickHanlder(props.children)}>
 
         {props.children}
     </div>
