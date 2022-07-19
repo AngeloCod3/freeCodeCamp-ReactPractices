@@ -1,0 +1,9 @@
+img {
+    width: 50%;
+
+}
+
+.Logo-container {
+    display: flex;
+    justify-content: center;
+}
