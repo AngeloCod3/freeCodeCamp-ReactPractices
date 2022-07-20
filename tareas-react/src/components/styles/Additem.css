@@ -1,0 +1,30 @@
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+}
+
+.input-task {
+    width: 350px;
+    font-size: 1.8rem;
+    background-color: white;
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid rgb(0, 64, 0);
+    outline: none;
+    vertical-align: bottom;
+}
+
+.addTaskButton {
+    font-size: 20px;
+    height: 64px;
+    background-color: transparent;
+    border-radius: 0px 4px 4px 0;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Roboto';
+    cursor: pointer;
+    text-transform: capitalize;
+}
