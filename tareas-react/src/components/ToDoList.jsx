@@ -14,10 +14,27 @@ function ToDoList() {
 
     const listaDeTareas = [tarea, ...task];
     setTask(listaDeTareas);
-    console.log(tarea)
+
    } else {
     alert('Inserte una tarea valida');
    }
+  }
+
+  const eliminarTarea = (id) => {
+    const actualizacion = task.filter(tarea => tarea.id !== id);
+    setTask(actualizacion);
+  }
+
+  const completarTarea = (id) => {
+    const actualizacionCompletar = task.map(tarea => {
+      if(tarea.id === id){
+        tarea.complete = !tarea.complete;
+      } 
+      return task;
+      
+    });
+    setTask(actualizacionCompletar);
+    console.log(task);
   }
 
   return (
@@ -28,7 +45,9 @@ function ToDoList() {
           task.map(tarea => <Tareas 
             key= {tarea.id}
             id= {tarea.id}
-            task = {tarea.text} />)
+            task = {tarea.text}
+            completarTarea = {completarTarea}
+            eliminarTarea={eliminarTarea}/>)
         }
       </div>
     </>

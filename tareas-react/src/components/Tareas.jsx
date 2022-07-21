@@ -10,7 +10,7 @@ function Tareas({id, task, complete, completarTarea, eliminarTarea}) {
         {task} <MdIncompleteCircle />
       </div>
       
-      <div className="task-icon" onClick={() => eliminarTarea(id   )}>
+      <div className="task-icon" onClick={() => eliminarTarea(id)}>
           <MdDeleteForever className='task-icon'/>
       </div>
     </div>
