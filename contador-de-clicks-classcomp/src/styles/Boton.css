@@ -1,0 +1,26 @@
+
+button {
+    margin: 0px 10px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    background-color: transparent;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .Click:hover {
+    background-color: lightgreen;
+  }
+
+  .Reset:hover {
+    background-color: rgba(255, 0, 0, 0.571);
+  }
+
+  button:hover {
+    border: solid 1px #ffffff;
+  }
